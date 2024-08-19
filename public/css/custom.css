@@ -1,0 +1,141 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: white;
+}
+
+.breadcrumb {
+    background-color: transparent !important;
+    padding: 0;
+}
+
+.breadcrumb .active {
+    font-weight: bold;
+    color: black;
+}
+
+.pilih-liga img {
+    max-height: 100px;
+}
+
+.pilih-liga .card {
+    border-radius: 15px;
+}
+
+.products .card {
+    border-radius: 15px;
+}
+
+.btn-dark {
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 200px !important;
+}
+
+.input-group-index {
+    width: 510px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        to bottom,
+        rgb(227, 213, 255),
+        rgb(255, 231, 231)
+    );
+    border-radius: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.input-group-index > .input {
+    width: 500px;
+    height: 40px;
+    border: none;
+    outline: none;
+    caret-color: rgb(255, 81, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    padding-left: 15px;
+    letter-spacing: 0.8px;
+    color: rgb(19, 19, 19);
+    font-size: 13.4px;
+}
+
+.card-home {
+    position: relative;
+    width: 300px; /* Lebar kartu diperbesar lagi */
+    height: 400px; /* Tinggi kartu diperbesar lagi */
+    border-radius: 14px;
+    z-index: 1111;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+.bg {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 290px; /* Sesuaikan lebar background */
+    height: 390px; /* Sesuaikan tinggi background */
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(24px);
+    border-radius: 10px;
+    overflow: hidden;
+    outline: 2px solid white;
+}
+
+.blob {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 250px; /* Perbesar ukuran blob lagi */
+    height: 300px; /* Perbesar ukuran blob lagi */
+    border-radius: 50%;
+    background-color: #ff0000;
+    opacity: 1;
+    filter: blur(12px);
+    animation: blob-bounce 5s infinite ease;
+}
+
+.card-body-home {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    width: 70%;
+    padding-bottom: 9%;
+}
+
+
+
+@keyframes blob-bounce {
+    0% {
+        transform: translate(-100%, -100%) translate3d(0, 0, 0);
+    }
+
+    25% {
+        transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+    }
+
+    50% {
+        transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+    }
+
+    75% {
+        transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+    }
+
+    100% {
+        transform: translate(-100%, -100%) translate3d(0, 0, 0);
+    }
+}

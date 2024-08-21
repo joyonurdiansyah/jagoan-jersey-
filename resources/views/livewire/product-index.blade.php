@@ -12,7 +12,7 @@
 
         <div class="row">
             <div class="col">
-                <h2>List <strong>Jersey</strong></h2>
+                <h2>{{ $title }}</h2>
             </div>
             <div class="col">
                 <div class="input-group-index">
@@ -36,7 +36,7 @@
                                 </div>
                                 <div class="row mt-2">
                                     <div class="col-md-12">
-                                        <a href="#" class="btn btn-dark btn-block">Detail</a>
+                                        <a href="#" class="learn-more">Detail</a>
                                     </div>
                                 </div>
                             </div>

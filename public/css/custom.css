@@ -37,18 +37,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(
-        to bottom,
-        rgb(227, 213, 255),
-        rgb(255, 231, 231)
-    );
+    background: linear-gradient(to bottom,
+            rgb(227, 213, 255),
+            rgb(255, 231, 231));
     border-radius: 30px;
     overflow: hidden;
     cursor: pointer;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
 }
 
-.input-group-index > .input {
+.input-group-index>.input {
     width: 500px;
     height: 40px;
     border: none;
@@ -64,8 +62,10 @@ body {
 
 .card-home {
     position: relative;
-    width: 300px; /* Lebar kartu diperbesar lagi */
-    height: 400px; /* Tinggi kartu diperbesar lagi */
+    width: 300px;
+    /* Lebar kartu diperbesar lagi */
+    height: 450px;
+    /* Tinggi kartu diperbesar lagi */
     border-radius: 14px;
     z-index: 1111;
     overflow: hidden;
@@ -80,8 +80,10 @@ body {
     position: absolute;
     top: 5px;
     left: 5px;
-    width: 290px; /* Sesuaikan lebar background */
-    height: 390px; /* Sesuaikan tinggi background */
+    width: 290px;
+    /* Sesuaikan lebar background */
+    height: 440px;
+    /* Sesuaikan tinggi background */
     z-index: 2;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(24px);
@@ -95,8 +97,10 @@ body {
     z-index: 1;
     top: 50%;
     left: 50%;
-    width: 250px; /* Perbesar ukuran blob lagi */
-    height: 300px; /* Perbesar ukuran blob lagi */
+    width: 250px;
+    /* Perbesar ukuran blob lagi */
+    height: 350px;
+    /* Perbesar ukuran blob lagi */
     border-radius: 50%;
     background-color: #ff0000;
     opacity: 1;
@@ -116,7 +120,84 @@ body {
     padding-bottom: 9%;
 }
 
+/* button detail */
+.learn-more {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 15px;
+}
 
+a.learn-more {
+    font-weight: 600;
+    color: #382b22;
+    text-transform: uppercase;
+    padding: 1em 3em;
+    background: #fff0f0;
+    border: 2px solid #b18597;
+    border-radius: 0.75em;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: background 150ms cubic-bezier(0, 0, 0.58, 1),
+        -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
+        background 150ms cubic-bezier(0, 0, 0.58, 1),
+        -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+
+a.learn-more::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #f9c4d2;
+    border-radius: inherit;
+    -webkit-box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
+    box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
+    -webkit-transform: translate3d(0, 0.75em, -1em);
+    transform: translate3d(0, 0.75em, -1em);
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
+        box-shadow 150ms cubic-bezier(0, 0, 0.58, 1),
+        -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1),
+        -webkit-box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+
+a.learn-more:hover {
+    background: #ffe9e9;
+    -webkit-transform: translate(0, 0.25em);
+    transform: translate(0, 0.25em);
+    text-decoration: none;
+    color: #b18597;
+}
+
+a.learn-more:hover::before {
+    -webkit-box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+    box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+    -webkit-transform: translate3d(0, 0.5em, -1em);
+    transform: translate3d(0, 0.5em, -1em);
+}
+
+a.learn-more:active {
+    background: #ffe9e9;
+    -webkit-transform: translate(0em, 0.75em);
+    transform: translate(0em, 0.75em);
+}
+
+a.learn-more:active::before {
+    -webkit-box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+    box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+    -webkit-transform: translate3d(0, 0, -1em);
+    transform: translate3d(0, 0, -1em);
+}
 
 @keyframes blob-bounce {
     0% {
@@ -139,3 +220,50 @@ body {
         transform: translate(-100%, -100%) translate3d(0, 0, 0);
     }
 }
+
+/* end button detail */
+
+/* lihat semua produk */
+.lihat-semua-produk {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    color: rgb(193, 163, 98);
+    border: 2px solid rgb(193, 163, 98);
+    border-radius: 34px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+}
+
+.lihat-semua-produk::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: rgb(193, 163, 98);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.lihat-semua-produk:hover::before {
+    scale: 4.6;
+}
+
+.lihat-semua-produk:hover {
+    color: #212121;
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(193, 163, 98, 0.4);
+}
+
+.lihat-semua-produk:active {
+    scale: 1;
+}
+
+/* end lihat semua produk */

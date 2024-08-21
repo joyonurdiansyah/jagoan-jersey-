@@ -16,7 +16,7 @@
             </div>
             <div class="col">
                 <div class="input-group-index">
-                    <input placeholder="Search.." id="input" class="input" name="text" type="text">
+                    <input wire:model="search" placeholder="Search.." id="input" class="input" name="text" type="text">
                 </div>
             </div>
         </div>

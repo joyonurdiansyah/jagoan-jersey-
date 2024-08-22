@@ -36,7 +36,7 @@
                                 </div>
                                 <div class="row mt-2">
                                     <div class="col-md-12">
-                                        <a href="#" class="learn-more">Detail</a>
+                                        <a href="{{ route('products.detail', $product->id) }}" class="learn-more mb-4">cek produk</a>
                                     </div>
                                 </div>
                             </div>

@@ -266,4 +266,10 @@ a.learn-more:active::before {
     scale: 1;
 }
 
+.gambar-product {
+    background-color: #f1f1f1;
+    border-width: 0;
+    border-radius: 20px;
+}
+
 /* end lihat semua produk */

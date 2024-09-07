@@ -36,6 +36,6 @@
         </main>
 
     </div>
-    {{-- <script src="https://kit.fontawesome.com/e1f618f385.js" crossorigin="anonymous"></script> --}}
+    <script src="https://kit.fontawesome.com/e1f618f385.js" crossorigin="anonymous"></script>
 </body>
 </html>

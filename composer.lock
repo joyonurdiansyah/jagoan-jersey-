@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6ee743b5e78c4567b6d0d282535f8547",
+    "content-hash": "fa19991fd24e2551d10e2efd1ff7c835",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1482,7 +1482,7 @@
         },
         {
             "name": "livewire/livewire",
-            "version": "v1.3.3",
+            "version": "v1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/livewire/livewire.git",
